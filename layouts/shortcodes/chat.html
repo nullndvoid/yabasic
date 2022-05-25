@@ -1,12 +1,24 @@
+<details>
+<summary style="font-size: 1.12rem;">
+Comments
+</summary>
+<div id="comment-section"></div>
+</details>
+
 <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
 <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-<div id="comment-section"></div>
+
 <script>
     initComments({
         node: document.getElementById("comment-section"),
         defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
         serverName: "cactus.chat",
         siteName: "nullndvoid.xyz",
-        commentSectionId: "{{ index .Params 0 }}"
+        commentSectionId: "test-comments"
     })
 </script>
+
+<noscript>
+<p>Please enable scripts to use <a href="https://cactus.chat/">cactus.chat</a> or <a href="https://matrix.to/#/%23comments_nullndvoid.xyz_test-comments%3Acactus.chat">join the Matrix channel</a></p>
+<small>#comments_nullndvoid.xyz_test-comments&colon;cactus.chat</small>
+</noscript>
