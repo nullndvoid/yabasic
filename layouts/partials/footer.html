@@ -1,8 +1,12 @@
 </main>
-	
+
 <footer>
-	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+	<div class="footer-text">
+		<p> {{ with replace .Site.Copyright "{currentYear}" now.Year }}{{ . | markdownify}} {{ end }} &middot; <a
+				href="https://github.com/nullndvoid/nullndvoid.xyz">Source code</a></p>
+	</div>
 </footer>
 
 </body>
+
 </html>
