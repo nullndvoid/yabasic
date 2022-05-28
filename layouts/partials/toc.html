@@ -1,9 +1,8 @@
-{{ define "main" }}
-<main>
-<article>
-    <aside>
-        {{ .TableOfContents }}
-    </aside>
-</article>
-</main>
+{{ if or (and (gt .WordCount 400 ) (.Params.toc)) .Params.DebugToc }}
+<aside>
+    <header>
+        <h2>{{.Title}}</h2>
+    </header>
+    {{.TableOfContents}}
+</aside>
 {{ end }}
