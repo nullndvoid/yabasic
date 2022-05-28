@@ -1,8 +1,8 @@
 {{ if or (and (gt .WordCount 400 ) (.Params.toc)) .Params.DebugToc }}
 <aside>
-    <header>
-        <h2>{{.Title}}</h2>
-    </header>
-    {{.TableOfContents}}
+    <details open>
+        <summary>Table of Contents</summary>
+        {{.TableOfContents}}
+    </details>
 </aside>
 {{ end }}
